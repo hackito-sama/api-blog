@@ -1,0 +1,31 @@
+{
+  "name": "api-blog",
+  "version": "1.0.0",
+  "description": "api rest en express para blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackito-sama/api-blog.git"
+  },
+  "author": "Jacob Cheuquiel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackito-sama/api-blog/issues"
+  },
+  "homepage": "https://github.com/hackito-sama/api-blog#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.0",
+    "@babel/core": "^7.12.0",
+    "nodemon": "^2.0.5"
+  }
+}
