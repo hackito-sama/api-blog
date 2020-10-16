@@ -14,8 +14,8 @@ app.use(morgan('dev'));
 app.use(json());
 
 //routes
-//app.use('api/comments', commentRoutes);
-//app.use('api/publication', publicationRoutes);
+//app.use('/api/comments', commentRoutes);
+//app.use('/api/publication', publicationRoutes);
 
 
 
