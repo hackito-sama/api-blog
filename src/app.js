@@ -3,8 +3,8 @@ import morgan from "morgan";
 
 
 //importing routes
-//import commentRoutes from "./routes/comments";
-//import publicationRoutes from "./routes/publications";
+import commentRoutes from "./routes/comment";
+import publicationRoutes from "./routes/publication";
 
 //intialize
 const app = express();
@@ -14,8 +14,8 @@ app.use(morgan('dev'));
 app.use(json());
 
 //routes
-//app.use('/api/comments', commentRoutes);
-//app.use('/api/publication', publicationRoutes);
+app.use('/api/comment', commentRoutes);
+app.use('/api/publication', publicationRoutes);
 
 
 

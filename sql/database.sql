@@ -3,15 +3,16 @@ CREATE TABLE publication (
 	title VARCHAR(255) NOT NULL,
 	description TEXT,
 	image JSON, 
-	create_at DATE NOT NULL,
+	createat DATE NOT NULL,
 	PRIMARY KEY (id)
 );
 
-CREATE TABLE comments(
+CREATE TABLE comment(
 	id INT NOT NULL AUTO_INCREMENT,
 	fullname VARCHAR(255) NOT NULL,
-	COMMENT TEXT NOT NULL,
-	publication_id INT NOT NULL,
+	message TEXT NOT NULL,
+	publicationId INT NOT NULL,
+	createat DATE NOT NULL,
 	PRIMARY KEY (id),
-	FOREIGN KEY (publication_id) REFERENCES publication(id)
-)
+	FOREIGN KEY (publicationId) REFERENCES publication(id)
+);
