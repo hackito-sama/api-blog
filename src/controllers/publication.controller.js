@@ -1,10 +1,10 @@
 import Publication from "../models/Publication";
 
-export function createPublication(req, res) {
+export async function createPublication(req, res) {
 
   const { title, description, image, create_at } = req.body;
 
-  Publication.create({
+  await Publication.create({
     title: title,
     description: description,
     image: image,
