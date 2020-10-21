@@ -1,16 +1,18 @@
+import moment from 'moment';
 import Publication from "../models/Publication";
 
 export async function createPublication(req, res) {
 
-  const { title, description, image, create_at } = req.body;
+  const { title, description, image } = req.body;
+
+  const currentDate = moment().format('YYYY-MM-DD');
 
   await Publication.create({
     title: title,
     description: description,
     image: image,
-    create_at: create_at,
+    createat: currentDate,
   });
   
-  console.log(req.body);
-  res.send("recibido");
+  res.send("Publication saved");
 }

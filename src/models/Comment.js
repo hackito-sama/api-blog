@@ -1,7 +1,7 @@
 import Sequelize from "sequelize";
 import {sequelize} from "../database/database";
 
-const Comment = sequelize.define("comment",
+const Comment = sequelize.define("comments",
   {
     id: {
       type: Sequelize.INTEGER,

@@ -7,12 +7,12 @@ export const sequelize = new Sequelize(
     {
         host: 'localhost', // host
         dialect: 'mysql', // tipo base de datos
-        pool:{ // cantidad de conexiones simultaneas
+        /*pool:{ // cantidad de conexiones simultaneas
             min: 0,
             max: 5,
             require: 30000,
             idle: 10000
-        },
+        },*/
         logging: false
     }
 

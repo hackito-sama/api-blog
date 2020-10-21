@@ -2,7 +2,7 @@ import Sequelize from "sequelize";
 import {sequelize} from "../database/database";
 import Comment from "./Comment";
 
-const Publication = sequelize.define("publication",
+const Publication = sequelize.define("publications",
   {
     id: {
       type: Sequelize.INTEGER,
