@@ -7,6 +7,7 @@ const Publication = sequelize.define("publications",
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,
+      autoIncrement: true,
     },
     title: {
       type: Sequelize.STRING,
