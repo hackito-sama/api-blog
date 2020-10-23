@@ -97,6 +97,11 @@ export async function updatePublication(req, res) {
         message: 'publication updated',
         data: publications
       })
+    }else{
+      return res.json({
+        message: "publication not found",
+        data: publications,
+      });
     }
   } catch (e) {
     console.log("Error!", e);
